@@ -93,7 +93,7 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="teste2.png" alt="Execução do Nmap no Kali Linux" width="100%">
+      <img src="02-nmap-enumeration-result.png" alt="Execução do Nmap no Kali Linux" width="100%">
     </td>
   </tr>
 </table>
