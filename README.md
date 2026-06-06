@@ -294,7 +294,7 @@ O laboratório resultou na identificação de uma credencial válida:
 
 ---
 
-<table width="100%" align="center">
+<table width="100%">
   <tr>
     <th width="12%">Serviço</th>
     <th width="28%">Host</th>
