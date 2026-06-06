@@ -86,20 +86,17 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
 | `21,22,80,445,139` | Lista as portas selecionadas para a varredura. | Inclui serviços comuns como FTP, SSH, HTTP e SMB, permitindo comparar diferentes pontos de exposição no alvo. |
 | `192.168.56.103` | Define o endereço IP da máquina alvo Metasploitable 2. | Representa o host vulnerável utilizado no ambiente controlado para a etapa de reconhecimento. |
 
-### Evidência visual
-
-![Enumeração com Nmap identificando serviços abertos](docs/images/01-nmap-enumeration.png)
-
 ### Resultado identificado
 
-```text
-PORT     STATE  SERVICE      VERSION
-21/tcp   open   ftp          vsftpd 2.3.4
-22/tcp   open   ssh          OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
-80/tcp   open   http         Apache httpd 2.2.8 ((Ubuntu) DAV/2)
-139/tcp  open   netbios-ssn  Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp  open   netbios-ssn  Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-```
+<table>
+  <tr>
+  </tr>
+  <tr>
+    <td width="100%" align="center">
+      <img src="02-nmap-enumeration.png" alt="Execução do Nmap no Kali Linux" width="100%">
+    </td>
+  </tr>
+</table>
 
 ### Análise da enumeração
 
