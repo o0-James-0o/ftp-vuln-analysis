@@ -296,18 +296,18 @@ O laboratório resultou na identificação de uma credencial válida:
 
 <table width="100%">
   <tr>
-    <th width="12%">Serviço</th>
-    <th width="28%">Host</th>
-    <th width="20%">Usuário</th>
-    <th width="20%">Senha</th>
-    <th width="20%">Status</th>
+    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serviço&nbsp;analisado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Endereço&nbsp;do&nbsp;alvo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credencial&nbsp;de&nbsp;usuário&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha&nbsp;correspondente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status&nbsp;final&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
   </tr>
   <tr>
-    <td><strong>FTP</strong></td>
-    <td><code>192.168.56.103</code></td>
-    <td><code>msfadmin</code></td>
-    <td><code>msfadmin</code></td>
-    <td><strong>SUCCESS</strong></td>
+    <td width="20%" align="center"><strong>FTP / Porta 21</strong></td>
+    <td width="20%" align="center"><code>192.168.56.103</code></td>
+    <td width="20%" align="center"><code>msfadmin</code></td>
+    <td width="20%" align="center"><code>msfadmin</code></td>
+    <td width="20%" align="center"><strong>SUCCESS</strong></td>
   </tr>
 </table>
 
