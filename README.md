@@ -1,4 +1,4 @@
-# 🔐 Dictionary Attack: Explorando FTP Vulnerável com Medusa
+# Dictionary Attack: Exploiting Vulnerable FTP with Medusa
 
 ![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 ![Metasploitable](https://img.shields.io/badge/Metasploitable%202-8B0000?style=for-the-badge&logo=linux&logoColor=white)
