@@ -159,21 +159,15 @@ Após identificar o serviço FTP, foram criadas duas listas simples para fins di
 - uma lista contendo possíveis **usuários**;
 - uma lista contendo possíveis **senhas**.
 
-### Criação do arquivo de usuários
-
-```bash
-echo -e "user\nmsfadmin\nadmin\nroot" > users.txt
-```
-
-### Criação do arquivo de senhas
-
-```bash
-echo -e "123456\npassword\nqwerty\nmsfadmin" > pass.txt
-```
-
-### Evidência visual
-
-![Criação dos arquivos de usuários e senhas no Kali Linux](docs/images/02-wordlists.png)
+<table>
+  <tr>
+  </tr>
+  <tr>
+    <td width="100%" align="center">
+      <img src="02-nmap-enumeration-result.png" alt="Resultado da enumeração com Nmap no Kali Linux" width="100%">
+    </td>
+  </tr>
+</table>
 
 ### Estrutura dos arquivos
 
