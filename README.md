@@ -62,14 +62,13 @@ A demonstração foi realizada com:
 
 ---
 
-
 ## 1. 🔎 Enumeração com Nmap
 
 A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o objetivo de identificar portas abertas, serviços ativos e versões em execução.
 
 <table>
   <tr>
-    <th width="100%">Comando Utilizado</th>
+    <th width="100%">Comando Executado</th>
   </tr>
   <tr>
     <td width="100%" align="center">
@@ -78,17 +77,14 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
   </tr>
 </table>
 
-
-
-
 ### Explicação dos parâmetros
 
-| Parâmetro | Função |
-|---|---|
-| `-sV` | Detecta versões dos serviços encontrados |
-| `-p` | Define quais portas serão analisadas |
-| `21,22,80,445,139` | Portas selecionadas para varredura |
-| `192.168.56.103` | IP da máquina alvo Metasploitable 2 |
+| Parâmetro | Função | Relevância no laboratório |
+|---|---|---|
+| `-sV` | Detecta as versões dos serviços encontrados durante a varredura. | Permite identificar tecnologias específicas em execução, como `vsftpd 2.3.4`, auxiliando na análise da superfície de ataque. |
+| `-p` | Define manualmente quais portas serão analisadas pelo Nmap. | Direciona a enumeração para portas relevantes, tornando a varredura mais objetiva e alinhada ao escopo do laboratório. |
+| `21,22,80,445,139` | Lista as portas selecionadas para a varredura. | Inclui serviços comuns como FTP, SSH, HTTP e SMB, permitindo comparar diferentes pontos de exposição no alvo. |
+| `192.168.56.103` | Define o endereço IP da máquina alvo Metasploitable 2. | Representa o host vulnerável utilizado no ambiente controlado para a etapa de reconhecimento. |
 
 ### Evidência visual
 
