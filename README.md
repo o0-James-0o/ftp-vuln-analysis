@@ -102,13 +102,45 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
 
 O serviço escolhido para o laboratório foi o **FTP**, identificado na porta `21/tcp`.
 
-| Porta | Serviço | Versão | Observação |
-|---|---|---|---|
-| `21/tcp` | FTP | `vsftpd 2.3.4` | Serviço selecionado para o teste de dicionário |
-| `22/tcp` | SSH | `OpenSSH 4.7p1` | Serviço remoto identificado |
-| `80/tcp` | HTTP | `Apache 2.2.8` | Servidor web ativo |
-| `139/tcp` | NetBIOS/SMB | `Samba smbd 3.X - 4.X` | Serviço de compartilhamento |
-| `445/tcp` | SMB | `Samba smbd 3.X - 4.X` | Serviço de compartilhamento |
+<table width="100%">
+  <tr>
+    <th width="12%">Porta</th>
+    <th width="13%">Serviço</th>
+    <th width="25%">Versão</th>
+    <th width="50%">Observação</th>
+  </tr>
+  <tr>
+    <td><code>21/tcp</code></td>
+    <td><strong>FTP</strong></td>
+    <td><code>vsftpd 2.3.4</code></td>
+    <td>Serviço selecionado para o teste de dicionário com Medusa.</td>
+  </tr>
+  <tr>
+    <td><code>22/tcp</code></td>
+    <td><strong>SSH</strong></td>
+    <td><code>OpenSSH 4.7p1</code></td>
+    <td>Serviço de acesso remoto identificado durante a enumeração.</td>
+  </tr>
+  <tr>
+    <td><code>80/tcp</code></td>
+    <td><strong>HTTP</strong></td>
+    <td><code>Apache httpd 2.2.8</code></td>
+    <td>Servidor web ativo no alvo, indicando exposição de aplicação HTTP.</td>
+  </tr>
+  <tr>
+    <td><code>139/tcp</code></td>
+    <td><strong>NetBIOS/SMB</strong></td>
+    <td><code>Samba smbd 3.X - 4.X</code></td>
+    <td>Serviço relacionado a compartilhamento e comunicação em redes Windows/Linux.</td>
+  </tr>
+  <tr>
+    <td><code>445/tcp</code></td>
+    <td><strong>SMB</strong></td>
+    <td><code>Samba smbd 3.X - 4.X</code></td>
+    <td>Serviço de compartilhamento de arquivos exposto na máquina alvo.</td>
+  </tr>
+</table>
+
 
 > A enumeração é uma etapa crítica em testes de intrusão, pois permite entender quais superfícies de ataque estão expostas antes de qualquer tentativa de exploração.
 
