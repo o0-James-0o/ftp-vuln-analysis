@@ -62,15 +62,24 @@ A demonstração foi realizada com:
 
 ---
 
+
 ## 1. 🔎 Enumeração com Nmap
 
 A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o objetivo de identificar portas abertas, serviços ativos e versões em execução.
 
-### Comando executado
+<table>
+  <tr>
+    <th width="100%">Comando Utilizado</th>
+  </tr>
+  <tr>
+    <td width="100%" align="center">
+      <img src="01-nmap-enumeration.png" alt="Execução do Nmap no Kali Linux" width="100%">
+    </td>
+  </tr>
+</table>
 
-```bash
-nmap -sV -p 21,22,80,445,139 192.168.56.103
-```
+
+
 
 ### Explicação dos parâmetros
 
