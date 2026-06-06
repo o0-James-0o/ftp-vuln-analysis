@@ -152,6 +152,7 @@ O serviço escolhido para o laboratório foi o **FTP**, identificado na porta `2
 
 ---
 
+
 ## 2. 📚 Criação das Wordlists
 
 Após identificar o serviço FTP, foram criadas duas listas simples para fins didáticos:
@@ -159,17 +160,19 @@ Após identificar o serviço FTP, foram criadas duas listas simples para fins di
 - uma lista contendo possíveis **usuários**;
 - uma lista contendo possíveis **senhas**.
 
+---
+
 <table>
   <tr>
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="02-nmap-enumeration-result.png" alt="Resultado da enumeração com Nmap no Kali Linux" width="100%">
+      <img src="03-wordlist.png" alt="Criação das wordlists users.txt e pass.txt no Kali Linux" width="100%">
     </td>
   </tr>
 </table>
 
-### Estrutura dos arquivos
+### 📁 Estrutura dos arquivos
 
 #### `users.txt`
 
@@ -178,7 +181,7 @@ user
 msfadmin
 admin
 root
-```
+````
 
 #### `pass.txt`
 
@@ -189,14 +192,29 @@ qwerty
 msfadmin
 ```
 
-### Observação técnica
+### 📝 Observação técnica
 
 O operador `>` foi utilizado para redirecionar a saída do comando `echo` para arquivos `.txt`.
 
-| Arquivo | Conteúdo | Função |
-|---|---|---|
-| `users.txt` | Possíveis nomes de usuário | Lista usada pelo Medusa com `-U` |
-| `pass.txt` | Possíveis senhas | Lista usada pelo Medusa com `-P` |
+---
+
+<table width="100%">
+  <tr>
+    <th width="18%">Arquivo</th>
+    <th width="32%">Conteúdo</th>
+    <th width="50%">Função</th>
+  </tr>
+  <tr>
+    <td><code>users.txt</code></td>
+    <td>Possíveis nomes de usuário</td>
+    <td>Lista utilizada pelo Medusa com o parâmetro <code>-U</code> para testar usuários durante o ataque de dicionário.</td>
+  </tr>
+  <tr>
+    <td><code>pass.txt</code></td>
+    <td>Possíveis senhas</td>
+    <td>Lista utilizada pelo Medusa com o parâmetro <code>-P</code> para testar senhas associadas aos usuários informados.</td>
+  </tr>
+</table>
 
 > Em um ambiente real de defesa, listas de senhas comuns como `123456`, `password` e `qwerty` devem ser bloqueadas por políticas de senha.
 
