@@ -224,56 +224,94 @@ O operador `>` foi utilizado para redirecionar a saída do comando `echo` para a
 
 Com o serviço FTP identificado e as wordlists criadas, foi executado o ataque de dicionário utilizando o **Medusa**.
 
-### Comando executado
+---
 
-```bash
-medusa -h 192.168.56.103 -U users.txt -P pass.txt -M ftp -t 6
-```
+<table>
+  <tr>
+  </tr>
+  <tr>
+    <td width="100%" align="center">
+      <img src="04-medusa-command.png" alt="Execução do comando Medusa contra o serviço FTP" width="100%">
+    </td>
+  </tr>
+</table>
 
-### Explicação dos parâmetros
+### 🧩 Explicação dos parâmetros
 
-| Parâmetro | Função |
-|---|---|
-| `-h 192.168.56.103` | Define o host alvo |
-| `-U users.txt` | Define a lista de usuários |
-| `-P pass.txt` | Define a lista de senhas |
-| `-M ftp` | Define o módulo/protocolo de ataque como FTP |
-| `-t 6` | Define o número de tarefas paralelas |
+---
 
-### Evidência visual
+<table width="100%">
+  <tr>
+    <th width="17%">Parâmetro</th>
+    <th width="38%">Função</th>
+    <th width="45%">Relevância no laboratório</th>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;"><code>-h 192.168.56.103</code></td>
+    <td>Define o host alvo que será testado pela ferramenta.</td>
+    <td>Direciona o ataque para a máquina Metasploitable 2 identificada previamente na etapa de enumeração.</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;"><code>-U users.txt</code></td>
+    <td>Define o arquivo contendo a lista de usuários.</td>
+    <td>Permite que o Medusa teste os nomes de usuário criados na wordlist customizada do laboratório.</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;"><code>-P pass.txt</code></td>
+    <td>Define o arquivo contendo a lista de senhas.</td>
+    <td>Permite testar combinações de senhas comuns contra os usuários definidos no arquivo <code>users.txt</code>.</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;"><code>-M ftp</code></td>
+    <td>Define o módulo/protocolo utilizado no ataque.</td>
+    <td>Especifica que o teste será realizado contra o serviço FTP exposto na porta <code>21/tcp</code>.</td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap;"><code>-t 6</code></td>
+    <td>Define o número de tarefas paralelas executadas pelo Medusa.</td>
+    <td>Aumenta a eficiência do teste ao permitir múltiplas tentativas simultâneas dentro do ambiente controlado.</td>
+  </tr>
+</table>
 
-![Execução do Medusa contra o serviço FTP e identificação de credencial válida](docs/images/03-medusa-success.png)
-
-### Resultado obtido
+### 📊 Resultado obtido
 
 Durante a execução, o Medusa testou as combinações entre os usuários e senhas informados.  
 O laboratório resultou na identificação de uma credencial válida:
 
-```text
-ACCOUNT FOUND: [ftp] Host: 192.168.56.103 User: msfadmin Password: msfadmin [SUCCESS]
-```
+---
 
-### Credencial encontrada no laboratório
+<table>
+  <tr>
+  </tr>
+  <tr>
+    <td width="100%" align="center">
+      <img src="05-medusa-command-result.png" alt="Resultado do ataque com Medusa destacando credencial encontrada" width="100%">
+    </td>
+  </tr>
+</table>
 
-| Serviço | Host | Usuário | Senha | Status |
-|---|---|---|---|---|
-| FTP | `192.168.56.103` | `msfadmin` | `msfadmin` | `SUCCESS` |
-
-> A credencial encontrada pertence ao ambiente vulnerável Metasploitable 2 e foi utilizada apenas para demonstração em laboratório.
+### 🔐 Credencial encontrada no laboratório
 
 ---
 
-## 🔍 Interpretação dos Resultados
+<table width="100%" align="center">
+  <tr>
+    <th width="12%">Serviço</th>
+    <th width="28%">Host</th>
+    <th width="20%">Usuário</th>
+    <th width="20%">Senha</th>
+    <th width="20%">Status</th>
+  </tr>
+  <tr>
+    <td><strong>FTP</strong></td>
+    <td><code>192.168.56.103</code></td>
+    <td><code>msfadmin</code></td>
+    <td><code>msfadmin</code></td>
+    <td><strong>SUCCESS</strong></td>
+  </tr>
+</table>
 
-O teste demonstrou que o serviço FTP aceitava autenticação com uma credencial fraca e previsível.
-
-A vulnerabilidade observada não está apenas na existência do serviço FTP, mas principalmente na combinação de fatores:
-
-1. serviço exposto na rede;
-2. credenciais fracas ou padrão;
-3. ausência de bloqueio por tentativas repetidas;
-4. ausência de monitoramento ativo;
-5. ambiente propositalmente vulnerável para estudo.
+> A credencial encontrada pertence ao ambiente vulnerável Metasploitable 2 e foi utilizada apenas para demonstração em laboratório.
 
 ---
 
