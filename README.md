@@ -296,11 +296,11 @@ O laboratório resultou na identificação de uma credencial válida:
 
 <table width="100%">
   <tr>
-    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;Serviço&nbsp;analisado&nbsp;&nbsp;&nbsp;</th>
-    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;Endereço&nbsp;do&nbsp;alvo&nbsp;&nbsp;&nbsp;</th>
-    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;Credencial&nbsp;de&nbsp;usuário&nbsp;&nbsp;&nbsp;</th>
-    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;Senha&nbsp;correspondente&nbsp;&nbsp;&nbsp;</th>
-    <th width="20%" align="center">&nbsp;&nbsp;&nbsp;Status&nbsp;final&nbsp;&nbsp;&nbsp;</th>
+    <th width="20%" align="center">Serviço&nbsp;analisado</th>
+    <th width="20%" align="center">Endereço&nbsp;do&nbsp;alvo</th>
+    <th width="20%" align="center">Credencial&nbsp;de&nbsp;usuário</th>
+    <th width="20%" align="center">Senha&nbsp;correspondente</th>
+    <th width="20%" align="center">Status&nbsp;final</th>
   </tr>
   <tr>
     <td width="20%" align="center"><strong>FTP / Porta 21</strong></td>
