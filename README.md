@@ -66,9 +66,10 @@ A demonstração foi realizada com:
 
 A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o objetivo de identificar portas abertas, serviços ativos e versões em execução.
 
+---
+
 <table>
   <tr>
-    <th width="100%">Comando Executado</th>
   </tr>
   <tr>
     <td width="100%" align="center">
@@ -77,7 +78,9 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
   </tr>
 </table>
 
-### Explicação dos parâmetros
+### 🧩 Explicação dos parâmetros
+
+---
 
 | Parâmetro | Função | Relevância no laboratório |
 |---|---|---|
@@ -86,19 +89,23 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
 | `21,22,80,445,139` | Lista as portas selecionadas para a varredura. | Inclui serviços comuns como FTP, SSH, HTTP e SMB, permitindo comparar diferentes pontos de exposição no alvo. |
 | `192.168.56.103` | Define o endereço IP da máquina alvo Metasploitable 2. | Representa o host vulnerável utilizado no ambiente controlado para a etapa de reconhecimento. |
 
-### Resultado identificado
+### 📊 Resultado identificado
+
+---
 
 <table>
   <tr>
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="02-nmap-enumeration-result.png" alt="Execução do Nmap no Kali Linux" width="100%">
+      <img src="02-nmap-enumeration-result.png" alt="Resultado da enumeração com Nmap no Kali Linux" width="100%">
     </td>
   </tr>
 </table>
 
-### Análise da enumeração
+### 🧠 Análise da enumeração
+
+---
 
 O serviço escolhido para o laboratório foi o **FTP**, identificado na porta `21/tcp`.
 
@@ -140,7 +147,6 @@ O serviço escolhido para o laboratório foi o **FTP**, identificado na porta `2
     <td>Serviço de compartilhamento de arquivos exposto na máquina alvo.</td>
   </tr>
 </table>
-
 
 > A enumeração é uma etapa crítica em testes de intrusão, pois permite entender quais superfícies de ataque estão expostas antes de qualquer tentativa de exploração.
 
