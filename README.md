@@ -94,7 +94,7 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="01-nmap-enumeration.png" alt="Execução do Nmap no Kali Linux" width="100%">
+      <img src="docs/images/01-nmap-enumeration.png" alt="Execução do Nmap no Kali Linux" width="100%">
     </td>
   </tr>
 </table>
@@ -119,7 +119,7 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="02-nmap-enumeration-result.png" alt="Resultado da enumeração com Nmap no Kali Linux" width="100%">
+      <img src="docs/images/02-nmap-enumeration-result.png" alt="Resultado da enumeração com Nmap no Kali Linux" width="100%">
     </td>
   </tr>
 </table>
@@ -188,7 +188,7 @@ Após identificar o serviço FTP, foram criadas duas listas simples para fins di
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="03-wordlist.png" alt="Criação das wordlists users.txt e pass.txt no Kali Linux" width="100%">
+      <img src="docs/images/03-wordlist.png" alt="Criação das wordlists users.txt e pass.txt no Kali Linux" width="100%">
     </td>
   </tr>
 </table>
@@ -252,7 +252,7 @@ Com o serviço FTP identificado e as wordlists criadas, foi executado o ataque d
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="04-medusa-command.png" alt="Execução do comando Medusa contra o serviço FTP" width="100%">
+      <img src="docs/images/04-medusa-command.png" alt="Execução do comando Medusa contra o serviço FTP" width="100%">
     </td>
   </tr>
 </table>
@@ -306,7 +306,7 @@ O laboratório resultou na identificação de uma credencial válida:
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="05-medusa-command-result.png" alt="Resultado do ataque com Medusa destacando credencial encontrada" width="100%">
+      <img src="docs/images/05-medusa-command-result.png" alt="Resultado do ataque com Medusa destacando credencial encontrada" width="100%">
     </td>
   </tr>
 </table>
