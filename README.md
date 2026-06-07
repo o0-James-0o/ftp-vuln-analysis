@@ -509,7 +509,7 @@ A atividade reforça a importância de boas práticas defensivas aplicadas em am
 
 ---
 
-## 👨‍💻 Autor/Instrutor
+## 👨‍💻 Autor
 
 <div align="left">
   <img src="avatar.png" alt="Avatar James Taylor" width="72" height="72" align="middle">
@@ -519,10 +519,6 @@ A atividade reforça a importância de boas práticas defensivas aplicadas em am
 
 ---
 
-## 📜 Licença
-
-Este projeto é disponibilizado para fins educacionais.  
-Use, adapte e compartilhe com responsabilidade.
 
 ```text
 Uso permitido: estudo, laboratório, documentação acadêmica e portfólio.
