@@ -518,9 +518,3 @@ A atividade reforça a importância de boas práticas defensivas aplicadas em am
 </div>
 
 ---
-
-
-```text
-Uso permitido: estudo, laboratório, documentação acadêmica e portfólio.
-Uso proibido: execução contra sistemas sem autorização.
-```
