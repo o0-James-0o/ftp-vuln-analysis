@@ -453,14 +453,57 @@ Ao final do laboratório, os participantes puderam compreender:
 
 Este laboratório demonstrou, de forma prática e controlada, como um ataque de dicionário pode comprometer um serviço quando há credenciais fracas ou previsíveis.
 
-A atividade reforça a importância de boas práticas defensivas, como:
+A atividade reforça a importância de boas práticas defensivas aplicadas em ambientes reais, especialmente quando serviços de autenticação estão expostos na rede.
 
-- criação de senhas robustas;
-- remoção de credenciais padrão;
-- limitação de tentativas de autenticação;
-- monitoramento de logs;
-- segmentação de rede;
-- redução da superfície de ataque.
+<table width="100%">
+  <tr>
+    <th width="8%" align="center">Visual</th>
+    <th width="27%" align="center">Boa prática defensiva</th>
+    <th width="65%" align="center">Importância para mitigação</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:form-textbox-password.svg?color=%236D28D9" width="32" height="32">
+    </td>
+    <td><strong>Senhas robustas</strong></td>
+    <td>Reduzem a chance de sucesso em ataques baseados em combinações comuns, previsíveis ou reutilizadas.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:key-remove.svg?color=%23DC2626" width="32" height="32">
+    </td>
+    <td><strong>Remoção de credenciais padrão</strong></td>
+    <td>Evita que usuários e senhas conhecidas sejam explorados em sistemas recém-instalados ou mal configurados.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:account-lock.svg?color=%23F59E0B" width="32" height="32">
+    </td>
+    <td><strong>Limitação de tentativas</strong></td>
+    <td>Dificulta testes automatizados ao aplicar bloqueios, atrasos ou restrições após múltiplas falhas de autenticação.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:file-search.svg?color=%230EA5E9" width="32" height="32">
+    </td>
+    <td><strong>Monitoramento de logs</strong></td>
+    <td>Permite identificar padrões suspeitos, como tentativas repetidas, autenticações falhas e acessos incomuns.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:lan.svg?color=%230F766E" width="32" height="32">
+    </td>
+    <td><strong>Segmentação de rede</strong></td>
+    <td>Restringe o acesso aos serviços apenas a redes confiáveis, reduzindo a exposição direta do ambiente.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:shield-half-full.svg?color=%2316A34A" width="32" height="32">
+    </td>
+    <td><strong>Redução da superfície de ataque</strong></td>
+    <td>Minimiza riscos ao desativar serviços desnecessários e manter apenas recursos essenciais expostos.</td>
+  </tr>
+</table>
 
 > Segurança ofensiva, quando praticada de forma ética e autorizada, é uma ferramenta essencial para fortalecer ambientes reais.
 
@@ -468,11 +511,11 @@ A atividade reforça a importância de boas práticas defensivas, como:
 
 ## 👨‍💻 Autor/Instrutor
 
-**Alessandro Aparecido Estevam**  
-Projeto desenvolvido para fins educacionais e composição de portfólio em Segurança da Informação.
-
-- GitHub: `https://github.com/seu-usuario`
-- LinkedIn: `https://www.linkedin.com/in/seu-perfil`
+<div align="left">
+  <img src="assets/James.png" alt="Avatar James Taylor" width="72" height="72" align="middle">
+  &nbsp;&nbsp;
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&pause=1000&color=A78BFA&vCenter=true&multiline=false&width=660&height=72&lines=James+Taylor+%7C+%F0%9F%96%A5%EF%B8%8F+Entidades,+Interface+visual+e+documenta%C3%A7%C3%A3o." alt="James Taylor | Interface visual e documentação técnica" align="middle">
+</div>
 
 ---
 
