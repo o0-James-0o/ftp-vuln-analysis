@@ -317,20 +317,85 @@ O laboratório resultou na identificação de uma credencial válida:
 
 ## 🛡️ Como Mitigar esse Tipo de Ataque
 
-A defesa contra ataques de dicionário envolve uma combinação de políticas, controles técnicos e monitoramento.
+A defesa contra ataques de dicionário envolve uma combinação de políticas, controles técnicos e monitoramento contínuo.
 
-| Medida | Descrição |
-|---|---|
-| Política de senhas fortes | Impedir senhas comuns, curtas ou previsíveis |
-| Bloqueio temporário | Aplicar bloqueio após múltiplas tentativas inválidas |
-| Rate limiting | Reduzir a velocidade de tentativas por IP ou usuário |
-| MFA | Exigir múltiplo fator de autenticação quando aplicável |
-| Monitoramento de logs | Identificar padrões de tentativa de login repetida |
-| Fail2ban/IDS | Automatizar bloqueios e alertas de comportamento suspeito |
-| Desativar serviços desnecessários | Remover FTP caso não seja essencial |
-| Preferir SFTP/FTPS | Utilizar protocolos mais seguros para transferência de arquivos |
-| Gestão de credenciais padrão | Alterar ou remover usuários e senhas padrão |
-| Segmentação de rede | Restringir acesso ao serviço somente a redes confiáveis |
+<table width="100%">
+  <tr>
+    <th width="8%" align="center">Ícone</th>
+    <th width="27%" align="center">Medida</th>
+    <th width="65%" align="center">Descrição</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:form-textbox-password.svg?color=%236D28D9" width="32" height="32">
+    </td>
+    <td><strong>Política de senhas fortes</strong></td>
+    <td>Impedir senhas comuns, curtas ou previsíveis, exigindo combinações mais robustas e resistentes a ataques de dicionário.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:account-lock.svg?color=%23DC2626" width="32" height="32">
+    </td>
+    <td><strong>Bloqueio temporário</strong></td>
+    <td>Aplicar bloqueio de conta ou atraso temporário após múltiplas tentativas inválidas de autenticação.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:speedometer-slow.svg?color=%23F59E0B" width="32" height="32">
+    </td>
+    <td><strong>Rate limiting</strong></td>
+    <td>Reduzir a velocidade de tentativas por IP, usuário ou serviço, dificultando ataques automatizados em larga escala.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:two-factor-authentication.svg?color=%23059669" width="32" height="32">
+    </td>
+    <td><strong>MFA</strong></td>
+    <td>Exigir múltiplo fator de autenticação quando aplicável, reduzindo o impacto do comprometimento de uma senha.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:file-search.svg?color=%230EA5E9" width="32" height="32">
+    </td>
+    <td><strong>Monitoramento de logs</strong></td>
+    <td>Identificar padrões de tentativa de login repetida, autenticações suspeitas e acessos fora do comportamento esperado.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:shield-alert.svg?color=%23EA580C" width="32" height="32">
+    </td>
+    <td><strong>Fail2ban / IDS</strong></td>
+    <td>Automatizar bloqueios e alertas a partir de comportamentos suspeitos, como múltiplas falhas de autenticação.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:server-off.svg?color=%237C3AED" width="32" height="32">
+    </td>
+    <td><strong>Desativar serviços desnecessários</strong></td>
+    <td>Remover ou desabilitar serviços que não são essenciais, reduzindo a superfície de ataque disponível.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:lock-check.svg?color=%2316A34A" width="32" height="32">
+    </td>
+    <td><strong>Preferir SFTP / FTPS</strong></td>
+    <td>Utilizar protocolos mais seguros para transferência de arquivos, evitando exposição desnecessária de serviços legados.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:key-change.svg?color=%23BE123C" width="32" height="32">
+    </td>
+    <td><strong>Gestão de credenciais padrão</strong></td>
+    <td>Alterar ou remover usuários e senhas padrão, especialmente em sistemas recém-instalados ou ambientes de teste.</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.iconify.design/mdi:lan.svg?color=%230F766E" width="32" height="32">
+    </td>
+    <td><strong>Segmentação de rede</strong></td>
+    <td>Restringir o acesso ao serviço somente a redes confiáveis, limitando a exposição direta do FTP.</td>
+  </tr>
+</table>
 
 ### Exemplo de indicadores defensivos
 
