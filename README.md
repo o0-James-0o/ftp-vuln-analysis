@@ -58,6 +58,27 @@ A demonstração foi realizada com:
 
 ---
 
+## 📁 Estrutura do Repositório
+
+A estrutura do projeto foi organizada para separar a documentação principal, evidências visuais e wordlists utilizadas no laboratório.
+
+```text
+medusa-dictionary-attack-lab/
+├── README.md
+├── docs/
+│   └── images/
+│       ├── 01-nmap-enumeration.png
+│       ├── 02-nmap-enumeration-result.png
+│       ├── 03-wordlist.png
+│       ├── 04-medusa-command.png
+│       └── 05-medusa-command-result.png
+└── wordlists/
+    ├── users.txt
+    └── pass.txt
+```
+
+---
+
 ## 🚀 Guia de Execução Passo a Passo
 
 ---
@@ -399,24 +420,6 @@ A defesa contra ataques de dicionário envolve uma combinação de políticas, c
   </tr>
 </table>
 
----
-
-## 📁 Estrutura do Repositório
-
-```text
-medusa-dictionary-attack-lab/
-├── README.md
-├── docs/
-│   └── images/
-│       ├── 01-nmap-enumeration.png
-│       ├── 02-wordlists.png
-│       └── 03-medusa-success.png
-├── wordlists/
-│   ├── users.txt
-│   └── pass.txt
-└── notes/
-    └── mitigations.md
-```
 ---
 
 ## ✅ Conclusão
