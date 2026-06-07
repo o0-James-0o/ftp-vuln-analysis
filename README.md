@@ -319,6 +319,8 @@ O laboratório resultou na identificação de uma credencial válida:
 
 A defesa contra ataques de dicionário envolve uma combinação de políticas, controles técnicos e monitoramento contínuo.
 
+---
+
 <table width="100%">
   <tr>
     <th width="8%" align="center">Ícone</th>
@@ -396,20 +398,6 @@ A defesa contra ataques de dicionário envolve uma combinação de políticas, c
     <td>Restringir o acesso ao serviço somente a redes confiáveis, limitando a exposição direta do FTP.</td>
   </tr>
 </table>
-
-### Exemplo de indicadores defensivos
-
-Administradores podem investigar eventos como:
-
-```text
-Múltiplas falhas de login no mesmo serviço
-Diversas tentativas vindas do mesmo IP
-Tentativas sequenciais contra diferentes usuários
-Uso de senhas comuns ou padrões conhecidos
-Autenticação bem-sucedida após várias falhas
-```
-
-> O objetivo de entender a técnica ofensiva é melhorar a capacidade de prevenção, detecção e resposta.
 
 ---
 
