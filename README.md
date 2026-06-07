@@ -11,56 +11,55 @@
 </p>
 
 
-
-> **Laboratório didático de Segurança da Informação** demonstrando, em ambiente isolado e autorizado, como funciona um ataque de força bruta do tipo **Dictionary Attack** contra um serviço FTP vulnerável.
-
----
-
-## 📌 Descrição do Projeto
-
-Este repositório apresenta um laboratório prático desenvolvido como projeto pessoal para demonstrar conhecimentos em segurança ofensiva, enumeração de serviços e ataques de dicionário.
-O objetivo foi demonstrar, de forma controlada, como um atacante pode utilizar listas de usuários e senhas para testar combinações contra um serviço exposto.
-
-A demonstração foi realizada com:
-
-- **Kali Linux** como máquina atacante;
-- **Metasploitable 2** como máquina alvo vulnerável;
-- **Nmap** para enumeração de portas e serviços;
-- **Medusa** para execução do ataque de dicionário contra o serviço **FTP**.
+> **Information Security lab** demonstrating, in an isolated and authorized environment, how a **Dictionary Attack** works against a vulnerable FTP service.
 
 ---
 
-## 🛠️ Ambiente e Ferramentas Utilizadas
+## 📌 Project Description
 
-### 🖥️ Ambiente
+This repository presents a practical lab developed as a personal project to demonstrate knowledge in offensive security, service enumeration, and dictionary attacks.  
+The goal was to demonstrate, in a controlled way, how an attacker can use username and password lists to test authentication combinations against an exposed service.
+
+The demonstration was performed with:
+
+- **Kali Linux** as the attacking machine;
+- **Metasploitable 2** as the vulnerable target machine;
+- **Nmap** for port and service enumeration;
+- **Medusa** to execute the dictionary attack against the **FTP** service.
 
 ---
 
-| Imagem | Recurso | Descrição |
+## 🛠️ Environment and Tools Used
+
+### 🖥️ Environment
+
+---
+
+| Image | Resource | Description |
 |:---:|---|---|
-| <img src="https://api.iconify.design/simple-icons:virtualbox.svg?color=%23183A61" width="32" height="32"> | **Virtualização** | Oracle VirtualBox utilizado para criar, executar e isolar as máquinas virtuais do laboratório de forma segura. |
-| <img src="https://api.iconify.design/simple-icons:kalilinux.svg?color=%23557C94" width="32" height="32"> | **Máquina atacante** | Kali Linux utilizado como ambiente ofensivo para execução das ferramentas de enumeração, criação de wordlists e ataque. |
-| <img src="https://api.iconify.design/simple-icons:linux.svg?color=%238B0000" width="32" height="32"> | **Máquina alvo** | Metasploitable 2 utilizado como sistema vulnerável propositalmente configurado para práticas de segurança em laboratório. |
-| <img src="https://api.iconify.design/tabler:network.svg?color=%230F766E" width="32" height="32"> | **Rede** | Rede virtual isolada entre as VMs, permitindo a comunicação entre atacante e alvo sem exposição externa. |
-| <img src="https://api.iconify.design/mdi:server-network.svg?color=%230A66C2" width="32" height="32"> | **Serviço explorado** | Serviço FTP identificado durante a fase de enumeração e utilizado como ponto de análise no ataque de dicionário. |
-| <img src="https://api.iconify.design/mdi:ethernet.svg?color=%23FACC15" width="32" height="32"> | **Porta explorada** | Porta **21/tcp**, associada ao protocolo FTP, selecionada para demonstrar tentativas automatizadas de autenticação. |
+| <img src="https://api.iconify.design/simple-icons:virtualbox.svg?color=%23183A61" width="32" height="32"> | **Virtualization** | Oracle VirtualBox used to create, run, and isolate the lab virtual machines safely. |
+| <img src="https://api.iconify.design/simple-icons:kalilinux.svg?color=%23557C94" width="32" height="32"> | **Attacking machine** | Kali Linux used as the offensive environment for enumeration, wordlist creation, and attack execution. |
+| <img src="https://api.iconify.design/simple-icons:linux.svg?color=%238B0000" width="32" height="32"> | **Target machine** | Metasploitable 2 used as an intentionally vulnerable system for security practice in a lab environment. |
+| <img src="https://api.iconify.design/tabler:network.svg?color=%230F766E" width="32" height="32"> | **Network** | Isolated virtual network between the VMs, allowing communication between attacker and target without external exposure. |
+| <img src="https://api.iconify.design/mdi:server-network.svg?color=%230A66C2" width="32" height="32"> | **Exploited service** | FTP service identified during enumeration and used as the analysis point for the dictionary attack. |
+| <img src="https://api.iconify.design/mdi:ethernet.svg?color=%23FACC15" width="32" height="32"> | **Exploited port** | Port **21/tcp**, associated with the FTP protocol, selected to demonstrate automated authentication attempts. |
 
-### ⚙️ Ferramentas
+### ⚙️ Tools
 
 ---
 
-| Imagem | Ferramenta | Finalidade |
+| Image | Tool | Purpose |
 |:---:|---|---|
-| <img src="https://api.iconify.design/mdi:radar.svg?color=%2300AEEF" width="32" height="32"> | **Nmap** | Ferramenta utilizada para identificar portas abertas, serviços ativos e versões em execução no alvo Metasploitable 2. |
-| <img src="https://api.iconify.design/game-icons:medusa-head.svg?color=%23E95420" width="32" height="32"> | **Medusa** | Ferramenta utilizada para automatizar testes de autenticação com usuários e senhas definidos em wordlists customizadas. |
-| <img src="https://api.iconify.design/simple-icons:gnubash.svg?color=%234EAA25" width="32" height="32"> | **Bash** | Shell utilizado para criar, organizar e manipular os arquivos de usuários e senhas empregados durante o laboratório. |
-| <img src="https://api.iconify.design/tabler:shield-lock.svg?color=%236D28D9" width="32" height="32"> | **Pentest** | Abordagem prática aplicada para simular um teste de intrusão autorizado, controlado e focado em aprendizado técnico. |
+| <img src="https://api.iconify.design/mdi:radar.svg?color=%2300AEEF" width="32" height="32"> | **Nmap** | Tool used to identify open ports, active services, and running versions on the Metasploitable 2 target. |
+| <img src="https://api.iconify.design/game-icons:medusa-head.svg?color=%23E95420" width="32" height="32"> | **Medusa** | Tool used to automate authentication tests with usernames and passwords defined in custom wordlists. |
+| <img src="https://api.iconify.design/simple-icons:gnubash.svg?color=%234EAA25" width="32" height="32"> | **Bash** | Shell used to create, organize, and manipulate the username and password files used during the lab. |
+| <img src="https://api.iconify.design/tabler:shield-lock.svg?color=%236D28D9" width="32" height="32"> | **Pentest** | Practical approach used to simulate an authorized, controlled intrusion test focused on technical learning. |
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📁 Repository Structure
 
-A estrutura do projeto foi organizada para separar a documentação principal, evidências visuais e wordlists utilizadas no laboratório.
+The project structure was organized to separate the main documentation, visual evidence, and wordlists used in the lab.
 
 ```text
 medusa-dictionary-attack-lab/
@@ -79,13 +78,13 @@ medusa-dictionary-attack-lab/
 
 ---
 
-## 🚀 Guia de Execução Passo a Passo
+## 🚀 Step-by-Step Execution Guide
 
 ---
 
-## 1. 🔎 Enumeração com Nmap
+## 1. 🔎 Enumeration with Nmap
 
-A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o objetivo de identificar portas abertas, serviços ativos e versões em execução.
+The first stage of the lab was to perform target reconnaissance in order to identify open ports, active services, and running versions.
 
 ---
 
@@ -94,23 +93,23 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="docs/images/01-nmap-enumeration.png" alt="Execução do Nmap no Kali Linux" width="100%">
+      <img src="docs/images/01-nmap-enumeration.png" alt="Nmap execution on Kali Linux" width="100%">
     </td>
   </tr>
 </table>
 
-### 🧩 Explicação dos parâmetros
+### 🧩 Parameter Explanation
 
 ---
 
-| Parâmetro | Função | Relevância no laboratório |
+| Parameter | Function | Relevance in the lab |
 |---|---|---|
-| `-sV` | Detecta as versões dos serviços encontrados durante a varredura. | Permite identificar tecnologias específicas em execução, como `vsftpd 2.3.4`, auxiliando na análise da superfície de ataque. |
-| `-p` | Define manualmente quais portas serão analisadas pelo Nmap. | Direciona a enumeração para portas relevantes, tornando a varredura mais objetiva e alinhada ao escopo do laboratório. |
-| `21,22,80,445,139` | Lista as portas selecionadas para a varredura. | Inclui serviços comuns como FTP, SSH, HTTP e SMB, permitindo comparar diferentes pontos de exposição no alvo. |
-| `192.168.56.103` | Define o endereço IP da máquina alvo Metasploitable 2. | Representa o host vulnerável utilizado no ambiente controlado para a etapa de reconhecimento. |
+| `-sV` | Detects the versions of services found during the scan. | Allows identification of specific technologies running on the target, such as `vsftpd 2.3.4`, helping analyze the attack surface. |
+| `-p` | Manually defines which ports will be scanned by Nmap. | Directs enumeration to relevant ports, making the scan more objective and aligned with the lab scope. |
+| `21,22,80,445,139` | Lists the selected ports for the scan. | Includes common services such as FTP, SSH, HTTP, and SMB, allowing comparison of different exposure points on the target. |
+| `192.168.56.103` | Defines the IP address of the Metasploitable 2 target machine. | Represents the vulnerable host used in the controlled environment for the reconnaissance stage. |
 
-### 📊 Resultado identificado
+### 📊 Identified Result
 
 ---
 
@@ -119,67 +118,66 @@ A primeira etapa do laboratório foi realizar o reconhecimento do alvo com o obj
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="docs/images/02-nmap-enumeration-result.png" alt="Resultado da enumeração com Nmap no Kali Linux" width="100%">
+      <img src="docs/images/02-nmap-enumeration-result.png" alt="Nmap enumeration result on Kali Linux" width="100%">
     </td>
   </tr>
 </table>
 
-### 🧠 Análise da enumeração
+### 🧠 Enumeration Analysis
 
 ---
 
-O serviço escolhido para o laboratório foi o **FTP**, identificado na porta `21/tcp`.
+The service selected for the lab was **FTP**, identified on port `21/tcp`.
 
 <table width="100%">
   <tr>
-    <th width="12%">Porta</th>
-    <th width="13%">Serviço</th>
-    <th width="25%">Versão</th>
-    <th width="50%">Observação</th>
+    <th width="12%">Port</th>
+    <th width="13%">Service</th>
+    <th width="25%">Version</th>
+    <th width="50%">Observation</th>
   </tr>
   <tr>
     <td><code>21/tcp</code></td>
     <td><strong>FTP</strong></td>
     <td><code>vsftpd 2.3.4</code></td>
-    <td>Serviço selecionado para o teste de dicionário com Medusa.</td>
+    <td>Service selected for the dictionary attack test with Medusa.</td>
   </tr>
   <tr>
     <td><code>22/tcp</code></td>
     <td><strong>SSH</strong></td>
     <td><code>OpenSSH 4.7p1</code></td>
-    <td>Serviço de acesso remoto identificado durante a enumeração.</td>
+    <td>Remote access service identified during enumeration.</td>
   </tr>
   <tr>
     <td><code>80/tcp</code></td>
     <td><strong>HTTP</strong></td>
     <td><code>Apache httpd 2.2.8</code></td>
-    <td>Servidor web ativo no alvo, indicando exposição de aplicação HTTP.</td>
+    <td>Active web server on the target, indicating HTTP application exposure.</td>
   </tr>
   <tr>
     <td><code>139/tcp</code></td>
     <td><strong>NetBIOS/SMB</strong></td>
     <td><code>Samba smbd 3.X - 4.X</code></td>
-    <td>Serviço relacionado a compartilhamento e comunicação em redes Windows/Linux.</td>
+    <td>Service related to sharing and communication in Windows/Linux networks.</td>
   </tr>
   <tr>
     <td><code>445/tcp</code></td>
     <td><strong>SMB</strong></td>
     <td><code>Samba smbd 3.X - 4.X</code></td>
-    <td>Serviço de compartilhamento de arquivos exposto na máquina alvo.</td>
+    <td>File-sharing service exposed on the target machine.</td>
   </tr>
 </table>
 
-> A enumeração é uma etapa crítica em testes de intrusão, pois permite entender quais superfícies de ataque estão expostas antes de qualquer tentativa de exploração.
+> Enumeration is a critical stage in penetration testing because it helps identify which attack surfaces are exposed before any exploitation attempt.
 
 ---
 
+## 2. 📚 Wordlist Creation
 
-## 2. 📚 Criação das Wordlists
+After identifying the FTP service, two simple lists were created for educational purposes:
 
-Após identificar o serviço FTP, foram criadas duas listas simples para fins didáticos:
-
-- uma lista contendo possíveis **usuários**;
-- uma lista contendo possíveis **senhas**.
+- a list containing possible **usernames**;
+- a list containing possible **passwords**.
 
 ---
 
@@ -188,12 +186,12 @@ Após identificar o serviço FTP, foram criadas duas listas simples para fins di
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="docs/images/03-wordlist.png" alt="Criação das wordlists users.txt e pass.txt no Kali Linux" width="100%">
+      <img src="docs/images/03-wordlist.png" alt="Creation of users.txt and pass.txt wordlists on Kali Linux" width="100%">
     </td>
   </tr>
 </table>
 
-### 📁 Estrutura dos arquivos
+### 📁 File Structure
 
 #### `users.txt`
 
@@ -202,7 +200,7 @@ user
 msfadmin
 admin
 root
-````
+```
 
 #### `pass.txt`
 
@@ -213,37 +211,37 @@ qwerty
 msfadmin
 ```
 
-### 📝 Observação técnica
+### 📝 Technical Note
 
-O operador `>` foi utilizado para redirecionar a saída do comando `echo` para arquivos `.txt`.
+The `>` operator was used to redirect the output of the `echo` command into `.txt` files.
 
 ---
 
 <table width="100%">
   <tr>
-    <th width="18%">Arquivo</th>
-    <th width="32%">Conteúdo</th>
-    <th width="50%">Função</th>
+    <th width="18%">File</th>
+    <th width="32%">Content</th>
+    <th width="50%">Purpose</th>
   </tr>
   <tr>
     <td><code>users.txt</code></td>
-    <td>Possíveis nomes de usuário</td>
-    <td>Lista utilizada pelo Medusa com o parâmetro <code>-U</code> para testar usuários durante o ataque de dicionário.</td>
+    <td>Possible usernames</td>
+    <td>List used by Medusa with the <code>-U</code> parameter to test usernames during the dictionary attack.</td>
   </tr>
   <tr>
     <td><code>pass.txt</code></td>
-    <td>Possíveis senhas</td>
-    <td>Lista utilizada pelo Medusa com o parâmetro <code>-P</code> para testar senhas associadas aos usuários informados.</td>
+    <td>Possible passwords</td>
+    <td>List used by Medusa with the <code>-P</code> parameter to test passwords associated with the provided users.</td>
   </tr>
 </table>
 
-> Em um ambiente real de defesa, listas de senhas comuns como `123456`, `password` e `qwerty` devem ser bloqueadas por políticas de senha.
+> In a real defensive environment, common passwords such as `123456`, `password`, and `qwerty` should be blocked by password policies.
 
 ---
 
-## 3. ⚡ Ataque de Dicionário com Medusa
+## 3. ⚡ Dictionary Attack with Medusa
 
-Com o serviço FTP identificado e as wordlists criadas, foi executado o ataque de dicionário utilizando o **Medusa**.
+With the FTP service identified and the wordlists created, the dictionary attack was executed using **Medusa**.
 
 ---
 
@@ -252,52 +250,52 @@ Com o serviço FTP identificado e as wordlists criadas, foi executado o ataque d
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="docs/images/04-medusa-command.png" alt="Execução do comando Medusa contra o serviço FTP" width="100%">
+      <img src="docs/images/04-medusa-command.png" alt="Medusa command execution against the FTP service" width="100%">
     </td>
   </tr>
 </table>
 
-### 🧩 Explicação dos parâmetros
+### 🧩 Parameter Explanation
 
 ---
 
 <table width="100%">
   <tr>
-    <th width="20%">Parâmetro</th>
-    <th width="35%">Função</th>
-    <th width="45%">Relevância no laboratório</th>
+    <th width="20%">Parameter</th>
+    <th width="35%">Function</th>
+    <th width="45%">Relevance in the lab</th>
   </tr>
   <tr>
     <td style="white-space: nowrap;"><code>-h 192.168.56.103</code></td>
-    <td>Define o host alvo que será testado pela ferramenta.</td>
-    <td>Direciona o ataque para a máquina Metasploitable 2 identificada previamente na etapa de enumeração.</td>
+    <td>Defines the target host to be tested by the tool.</td>
+    <td>Directs the attack to the Metasploitable 2 machine previously identified during enumeration.</td>
   </tr>
   <tr>
     <td style="white-space: nowrap;"><code>-U users.txt</code></td>
-    <td>Define o arquivo contendo a lista de usuários.</td>
-    <td>Permite que o Medusa teste os nomes de usuário criados na wordlist customizada do laboratório.</td>
+    <td>Defines the file containing the username list.</td>
+    <td>Allows Medusa to test the usernames created in the lab custom wordlist.</td>
   </tr>
   <tr>
     <td style="white-space: nowrap;"><code>-P pass.txt</code></td>
-    <td>Define o arquivo contendo a lista de senhas.</td>
-    <td>Permite testar combinações de senhas comuns contra os usuários definidos no arquivo <code>users.txt</code>.</td>
+    <td>Defines the file containing the password list.</td>
+    <td>Allows testing common password combinations against the users defined in the <code>users.txt</code> file.</td>
   </tr>
   <tr>
     <td style="white-space: nowrap;"><code>-M ftp</code></td>
-    <td>Define o módulo/protocolo utilizado no ataque.</td>
-    <td>Especifica que o teste será realizado contra o serviço FTP exposto na porta <code>21/tcp</code>.</td>
+    <td>Defines the module/protocol used in the attack.</td>
+    <td>Specifies that the test will be performed against the FTP service exposed on port <code>21/tcp</code>.</td>
   </tr>
   <tr>
     <td style="white-space: nowrap;"><code>-t 6</code></td>
-    <td>Define o número de tarefas paralelas executadas pelo Medusa.</td>
-    <td>Aumenta a eficiência do teste ao permitir múltiplas tentativas simultâneas dentro do ambiente controlado.</td>
+    <td>Defines the number of parallel tasks executed by Medusa.</td>
+    <td>Improves test efficiency by allowing multiple simultaneous attempts within the controlled environment.</td>
   </tr>
 </table>
 
-### 📊 Resultado obtido
+### 📊 Result Obtained
 
-Durante a execução, o Medusa testou as combinações entre os usuários e senhas informados.  
-O laboratório resultou na identificação de uma credencial válida:
+During execution, Medusa tested combinations between the provided usernames and passwords.  
+The lab resulted in the identification of a valid credential:
 
 ---
 
@@ -306,25 +304,25 @@ O laboratório resultou na identificação de uma credencial válida:
   </tr>
   <tr>
     <td width="100%" align="center">
-      <img src="docs/images/05-medusa-command-result.png" alt="Resultado do ataque com Medusa destacando credencial encontrada" width="100%">
+      <img src="docs/images/05-medusa-command-result.png" alt="Medusa attack result highlighting the discovered credential" width="100%">
     </td>
   </tr>
 </table>
 
-### 🔐 Credencial encontrada no laboratório
+### 🔐 Credential Found in the Lab
 
 ---
 
 <table width="100%">
   <tr>
-    <th width="20%" align="center">&nbsp;Serviço&nbsp;analisado&nbsp;</th>
-    <th width="20%" align="center">&nbsp;Endereço&nbsp;do&nbsp;alvo&nbsp;</th>
-    <th width="20%" align="center">&nbsp;Credencial&nbsp;de&nbsp;usuário&nbsp;</th>
-    <th width="20%" align="center">&nbsp;Senha&nbsp;correspondente&nbsp;</th>
-    <th width="20%" align="center">&nbsp;Status&nbsp;final&nbsp;</th>
+    <th width="20%" align="center">&nbsp;Analyzed&nbsp;service&nbsp;</th>
+    <th width="20%" align="center">&nbsp;Target&nbsp;address&nbsp;</th>
+    <th width="20%" align="center">&nbsp;Username&nbsp;credential&nbsp;</th>
+    <th width="20%" align="center">&nbsp;Matching&nbsp;password&nbsp;</th>
+    <th width="20%" align="center">&nbsp;Final&nbsp;status&nbsp;</th>
   </tr>
   <tr>
-    <td width="20%" align="center"><strong>FTP / Porta 21</strong></td>
+    <td width="20%" align="center"><strong>FTP / Port 21</strong></td>
     <td width="20%" align="center"><code>192.168.56.103</code></td>
     <td width="20%" align="center"><code>msfadmin</code></td>
     <td width="20%" align="center"><code>msfadmin</code></td>
@@ -332,162 +330,162 @@ O laboratório resultou na identificação de uma credencial válida:
   </tr>
 </table>
 
-> A credencial encontrada pertence ao ambiente vulnerável Metasploitable 2 e foi utilizada apenas para demonstração em laboratório.
+> The discovered credential belongs to the vulnerable Metasploitable 2 environment and was used only for lab demonstration purposes.
 
 ---
 
-## 🛡️ Como Mitigar esse Tipo de Ataque
+## 🛡️ How to Mitigate This Type of Attack
 
-A defesa contra ataques de dicionário envolve uma combinação de políticas, controles técnicos e monitoramento contínuo.
+Defending against dictionary attacks involves a combination of policies, technical controls, and continuous monitoring.
 
 ---
 
 <table width="100%">
   <tr>
-    <th width="8%" align="center">Ícone</th>
-    <th width="27%" align="center">Medida</th>
-    <th width="65%" align="center">Descrição</th>
+    <th width="8%" align="center">Icon</th>
+    <th width="27%" align="center">Measure</th>
+    <th width="65%" align="center">Description</th>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:form-textbox-password.svg?color=%236D28D9" width="32" height="32">
     </td>
-    <td><strong>Política de senhas fortes</strong></td>
-    <td>Impedir senhas comuns, curtas ou previsíveis, exigindo combinações mais robustas e resistentes a ataques de dicionário.</td>
+    <td><strong>Strong password policy</strong></td>
+    <td>Prevent common, short, or predictable passwords by requiring stronger combinations resistant to dictionary attacks.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:account-lock.svg?color=%23DC2626" width="32" height="32">
     </td>
-    <td><strong>Bloqueio temporário</strong></td>
-    <td>Aplicar bloqueio de conta ou atraso temporário após múltiplas tentativas inválidas de autenticação.</td>
+    <td><strong>Temporary lockout</strong></td>
+    <td>Apply account lockout or temporary delay after multiple invalid authentication attempts.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:speedometer-slow.svg?color=%23F59E0B" width="32" height="32">
     </td>
     <td><strong>Rate limiting</strong></td>
-    <td>Reduzir a velocidade de tentativas por IP, usuário ou serviço, dificultando ataques automatizados em larga escala.</td>
+    <td>Reduce the speed of attempts per IP, user, or service, making large-scale automated attacks harder.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:two-factor-authentication.svg?color=%23059669" width="32" height="32">
     </td>
     <td><strong>MFA</strong></td>
-    <td>Exigir múltiplo fator de autenticação quando aplicável, reduzindo o impacto do comprometimento de uma senha.</td>
+    <td>Require multi-factor authentication when applicable, reducing the impact of a compromised password.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:file-search.svg?color=%230EA5E9" width="32" height="32">
     </td>
-    <td><strong>Monitoramento de logs</strong></td>
-    <td>Identificar padrões de tentativa de login repetida, autenticações suspeitas e acessos fora do comportamento esperado.</td>
+    <td><strong>Log monitoring</strong></td>
+    <td>Identify repeated login attempt patterns, suspicious authentications, and access outside expected behavior.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:shield-alert.svg?color=%23EA580C" width="32" height="32">
     </td>
     <td><strong>Fail2ban / IDS</strong></td>
-    <td>Automatizar bloqueios e alertas a partir de comportamentos suspeitos, como múltiplas falhas de autenticação.</td>
+    <td>Automate blocks and alerts based on suspicious behavior, such as multiple authentication failures.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:server-off.svg?color=%237C3AED" width="32" height="32">
     </td>
-    <td><strong>Desativar serviços desnecessários</strong></td>
-    <td>Remover ou desabilitar serviços que não são essenciais, reduzindo a superfície de ataque disponível.</td>
+    <td><strong>Disable unnecessary services</strong></td>
+    <td>Remove or disable services that are not essential, reducing the available attack surface.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:lock-check.svg?color=%2316A34A" width="32" height="32">
     </td>
-    <td><strong>Preferir SFTP / FTPS</strong></td>
-    <td>Utilizar protocolos mais seguros para transferência de arquivos, evitando exposição desnecessária de serviços legados.</td>
+    <td><strong>Prefer SFTP / FTPS</strong></td>
+    <td>Use more secure file transfer protocols, avoiding unnecessary exposure of legacy services.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:key-change.svg?color=%23BE123C" width="32" height="32">
     </td>
-    <td><strong>Gestão de credenciais padrão</strong></td>
-    <td>Alterar ou remover usuários e senhas padrão, especialmente em sistemas recém-instalados ou ambientes de teste.</td>
+    <td><strong>Default credential management</strong></td>
+    <td>Change or remove default usernames and passwords, especially on newly installed systems or test environments.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:lan.svg?color=%230F766E" width="32" height="32">
     </td>
-    <td><strong>Segmentação de rede</strong></td>
-    <td>Restringir o acesso ao serviço somente a redes confiáveis, limitando a exposição direta do FTP.</td>
+    <td><strong>Network segmentation</strong></td>
+    <td>Restrict access to the service only to trusted networks, limiting direct exposure of FTP.</td>
   </tr>
 </table>
 
 ---
 
-## ✅ Conclusão
+## ✅ Conclusion
 
-Este laboratório demonstrou, de forma prática e controlada, como um ataque de dicionário pode comprometer um serviço quando há credenciais fracas ou previsíveis.
+This lab demonstrated, in a practical and controlled way, how a dictionary attack can compromise a service when weak or predictable credentials are present.
 
-A atividade reforça a importância de boas práticas defensivas aplicadas em ambientes reais, especialmente quando serviços de autenticação estão expostos na rede.
+The activity reinforces the importance of defensive best practices applied in real environments, especially when authentication services are exposed on the network.
 
 <table width="100%">
   <tr>
     <th width="8%" align="center">Visual</th>
-    <th width="27%" align="center">Boa prática defensiva</th>
-    <th width="65%" align="center">Importância para mitigação</th>
+    <th width="27%" align="center">Defensive best practice</th>
+    <th width="65%" align="center">Importance for mitigation</th>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:form-textbox-password.svg?color=%236D28D9" width="32" height="32">
     </td>
-    <td><strong>Senhas robustas</strong></td>
-    <td>Reduzem a chance de sucesso em ataques baseados em combinações comuns, previsíveis ou reutilizadas.</td>
+    <td><strong>Strong passwords</strong></td>
+    <td>Reduce the chance of success in attacks based on common, predictable, or reused combinations.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:key-remove.svg?color=%23DC2626" width="32" height="32">
     </td>
-    <td><strong>Remoção de credenciais padrão</strong></td>
-    <td>Evita que usuários e senhas conhecidas sejam explorados em sistemas recém-instalados ou mal configurados.</td>
+    <td><strong>Removal of default credentials</strong></td>
+    <td>Prevents known usernames and passwords from being exploited on newly installed or poorly configured systems.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:account-lock.svg?color=%23F59E0B" width="32" height="32">
     </td>
-    <td><strong>Limitação de tentativas</strong></td>
-    <td>Dificulta testes automatizados ao aplicar bloqueios, atrasos ou restrições após múltiplas falhas de autenticação.</td>
+    <td><strong>Attempt limitation</strong></td>
+    <td>Makes automated tests harder by applying lockouts, delays, or restrictions after multiple authentication failures.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:file-search.svg?color=%230EA5E9" width="32" height="32">
     </td>
-    <td><strong>Monitoramento de logs</strong></td>
-    <td>Permite identificar padrões suspeitos, como tentativas repetidas, autenticações falhas e acessos incomuns.</td>
+    <td><strong>Log monitoring</strong></td>
+    <td>Helps identify suspicious patterns, such as repeated attempts, failed authentications, and unusual access.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:lan.svg?color=%230F766E" width="32" height="32">
     </td>
-    <td><strong>Segmentação de rede</strong></td>
-    <td>Restringe o acesso aos serviços apenas a redes confiáveis, reduzindo a exposição direta do ambiente.</td>
+    <td><strong>Network segmentation</strong></td>
+    <td>Restricts access to services only to trusted networks, reducing direct exposure of the environment.</td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://api.iconify.design/mdi:shield-half-full.svg?color=%2316A34A" width="32" height="32">
     </td>
-    <td><strong>Redução da superfície de ataque</strong></td>
-    <td>Minimiza riscos ao desativar serviços desnecessários e manter apenas recursos essenciais expostos.</td>
+    <td><strong>Attack surface reduction</strong></td>
+    <td>Minimizes risk by disabling unnecessary services and keeping only essential resources exposed.</td>
   </tr>
 </table>
 
-> Segurança ofensiva, quando praticada de forma ética e autorizada, é uma ferramenta essencial para fortalecer ambientes reais.
+> Offensive security, when practiced ethically and with authorization, is an essential tool for strengthening real environments.
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 <div align="left">
   <img src="docs/images/avatar.png" alt="Avatar James Taylor" width="72" height="72" align="middle">
   &nbsp;&nbsp;
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&pause=1000&color=A78BFA&vCenter=true&multiline=false&width=660&height=72&lines=James+Taylor+%7C+%F0%9F%9B%A1%EF%B8%8F+Cybersecurity+Student,+Blue+Team+and+SOC." alt="James Taylor | Cybersecurity Student, Blue Team e SOC" align="middle">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&pause=1000&color=A78BFA&vCenter=true&multiline=false&width=660&height=72&lines=James+Taylor+%7C+%F0%9F%9B%A1%EF%B8%8F+Cybersecurity+Student,+Blue+Team+and+SOC." alt="James Taylor | Cybersecurity Student, Blue Team and SOC" align="middle">
 </div>
 
 ---
