@@ -401,7 +401,7 @@ A defesa contra ataques de dicionário envolve uma combinação de políticas, c
 
 ---
 
-## 📁 Organização Recomendada do Repositório
+## 📁 Estrutura do Repositório
 
 ```text
 medusa-dictionary-attack-lab/
