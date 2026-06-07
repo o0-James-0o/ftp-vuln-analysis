@@ -242,8 +242,8 @@ Com o serviço FTP identificado e as wordlists criadas, foi executado o ataque d
 
 <table width="100%">
   <tr>
-    <th width="19%">Parâmetro</th>
-    <th width="36%">Função</th>
+    <th width="20%">Parâmetro</th>
+    <th width="35%">Função</th>
     <th width="45%">Relevância no laboratório</th>
   </tr>
   <tr>
