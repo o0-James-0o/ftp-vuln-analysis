@@ -417,36 +417,6 @@ medusa-dictionary-attack-lab/
 └── notes/
     └── mitigations.md
 ```
-
-### Sugestão para adicionar os prints
-
-Renomeie as imagens do laboratório e salve-as em:
-
-```text
-docs/images/
-```
-
-Mapeamento sugerido:
-
-| Print | Nome recomendado |
-|---|---|
-| Print da enumeração Nmap | `01-nmap-enumeration.png` |
-| Print da criação das wordlists | `02-wordlists.png` |
-| Print do Medusa com sucesso | `03-medusa-success.png` |
-
----
-
-## 🧠 Principais Aprendizados
-
-Ao final do laboratório, os participantes puderam compreender:
-
-- como identificar serviços expostos em uma máquina alvo;
-- como interpretar versões e portas retornadas pelo Nmap;
-- como funcionam arquivos de dicionário para usuários e senhas;
-- como ferramentas automatizadas testam combinações de credenciais;
-- por que senhas fracas continuam sendo um risco crítico;
-- quais controles reduzem o risco de ataques de força bruta.
-
 ---
 
 ## ✅ Conclusão
