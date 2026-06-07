@@ -514,7 +514,7 @@ A atividade reforça a importância de boas práticas defensivas aplicadas em am
 <div align="left">
   <img src="avatar.png" alt="Avatar James Taylor" width="72" height="72" align="middle">
   &nbsp;&nbsp;
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&pause=1000&color=A78BFA&vCenter=true&multiline=false&width=660&height=72&lines=James+Taylor+%7C+%F0%9F%96%A5%EF%B8%8F+Entidades,+Interface+visual+e+documenta%C3%A7%C3%A3o." alt="James Taylor | Interface visual e documentação técnica" align="middle">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&pause=1000&color=A78BFA&vCenter=true&multiline=false&width=660&height=72&lines=James+Taylor+%7C+%F0%9F%9B%A1%EF%B8%8F+Cybersecurity+Student,+Blue+Team+and+SOC." alt="James Taylor | Cybersecurity Student, Blue Team e SOC" align="middle">
 </div>
 
 ---
